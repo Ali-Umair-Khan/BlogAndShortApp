@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Satisfy&family=Sedgwick+Ave+Display&display=swap');
+.navbar{
+    /* height: 12vh; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.5rem;
+    width:97vw;
+    /* margin:1rem; */
+    /* background-color:#2ae; */
+    background-image: linear-gradient(75deg, rgb(223, 230, 244) 17.8%,rgb(248, 248, 253) 17.8%);
+
+}
+
+.navbar__links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    font-size:1.2rem;
+    padding:1rem 1.5rem;
+    margin-right:1.5rem;
+}
+
+.navbar__links > * {
+    text-decoration: none;
+    font-size:1.6rem;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #770573 35%, #601903c6 35%,#601903c6 70%, #078405 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight:500;
+}
+.navbar-link{
+    border-bottom:none;
+    transition: border-bottom 2s ease-in;
+}
+.navbar-link:hover{
+    /* text-decoration:solid; */
+    /* padding-bottom: 1.5rem; */
+    /* animation : all 0.5s ease-in; */
+    color:#abce82;
+    border-bottom: 2px solid #abce82;
+}
+
+.navbar__logo{
+    width:2rem;
+    height:2rem;
+    font-family: 'sidgwick';
+    /* background-image: url('/public/logo.png'); */
+    font-size:5.5rem;
+    text-decoration: none;
+    padding:1rem 2rem;
+    margin-left:1.5rem;
+    /* margin-bottom:1.5rem; */
+    display:flex;
+    align-items:center;
+}
+
+.navbar__links-btn{
+    color:white;
+    background-color:green;
+    border:2px solid transparent;
+    /* padding:0.5rem 1rem; */
+    /* margin-left:1rem; */
+}
+
+
+@media (max-width:76rem){
+    .navbar{
+        flex-direction: column;
+        /* margin:0; */
+        width:99vw;
+    }
+}

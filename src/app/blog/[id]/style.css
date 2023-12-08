@@ -1,0 +1,89 @@
+.content-box{
+    display:flex;
+    place-items: center space-between;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap:1rem;
+    flex-direction: column;
+}
+
+.content-box h1 {
+    padding:1rem 3.5rem;
+    margin:2rem;
+    font-size:5.2rem;
+    margin-left:3rem;
+}
+.content-box > h1+p {
+    padding:1rem 2.5rem;
+    font-size: 2.4rem;
+    margin:2rem;
+    margin-left:3rem;
+}
+
+.content-box > h3 {
+    padding:1rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight:300;
+    /* margin-right:4rem; */
+    text-align:center;
+    font-style:italic;
+}
+
+
+/* .container__main{
+     display:grid;
+    /* grid-template-columns: repeat(auto-fit,min(30rem,100%)); */
+    /* grid-template-columns: repeat(auto-fit,min(50rem,100%,100%)); */
+
+    /* grid-template-columns: repeat(2,1fr); */
+    /* place-content: center; */
+    /* place-items: center; */
+    /* gap:1rem; */
+    /* grid-auto-flow: dense;  */
+    /* display:flex;
+    gap:1rem;
+    place-items: center; */
+    /* width:100%; */
+/* }  */
+
+.content-box--image{
+    width:90vw;
+    height:auto;
+    margin:0 auto;
+    object-fit:contain;
+    background-size:cover;
+}
+
+.text__main{
+    column-count: 3;
+    padding:1rem 5rem;
+}
+
+.content-box--text{
+    font-size:1.6rem;
+    white-space:no-wrap;
+    text-align:justify;
+    margin:0;
+    padding:0;
+    padding: 0 2rem;
+    margin: 0 auto;
+    /* padding:1rem 2.5rem; */
+    /* margin:1rem auto; */
+    break-inside: avoid; /* Prevent paragraphs from breaking across columns */
+    margin: 0; /* Remove margin for paragraphs */
+    text-indent:3em;
+    /* display:flex; */
+    /* flex-direction: column; */
+
+}
+
+
+.content-box--text:first-line {
+    margin-left: 0; /* Remove margin for the first line of each paragraph */
+    /* font-weight: bold; */
+}
+
+.content-box--text::first-letter{
+    /* font-weight:500; */
+    font-size:1.6rem;
+}
